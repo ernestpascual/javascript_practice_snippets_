@@ -1,7 +1,7 @@
 
 function confirmEnding(str, target) {
-  // "Never give up and good luck will find you."
-  // -- Falcor
+  
+  // get last letter
   if (target.length == 1){
     var getLastLetter = str.substr(str.length -1, target.length);
   if (getLastLetter == target){
@@ -10,6 +10,7 @@ function confirmEnding(str, target) {
     return false;
   }
   } else {
+  // get last word
     var getLastWord = str.substr(str.length - target.length, target.length);
     if (getLastWord == target){
     return true;
