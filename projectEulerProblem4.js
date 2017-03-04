@@ -22,12 +22,13 @@ for(i=100; i < 1000; i++){
 
 
 // reusable number palindrome function on the highest x digit number
-// to be edited
 var highestNumberPalindrome = function (number){
   // get the lowest and highest number for the range
   var highestNumber = Math.pow(10, number);
   var lowestNumber  = Math.pow(10, number -1)
-  
+  var x = 0;
+  var y = "";
+  var answer = 0;
   // apply the operation
   for(i=lowestNumber; i < highestNumber; i++){
   for (j=lowestNumber; j< highestNumber; j++){
@@ -41,9 +42,10 @@ var highestNumberPalindrome = function (number){
     }
         }
         }
- return answer;
+
 }
+   return answer;
 }
-  
-console.log(highestNumberPalindrome(2));
+// checking for a three digit number
+console.log(highestNumberPalindrome(3));
  
