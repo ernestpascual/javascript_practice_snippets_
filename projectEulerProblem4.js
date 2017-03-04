@@ -22,7 +22,7 @@ for(i=100; i < 1000; i++){
 
 
 // reusable number palindrome function on the highest x digit number
-
+// to be edited
 var highestNumberPalindrome = function (number){
   // get the lowest and highest number for the range
   var highestNumber = Math.pow(10, number);
